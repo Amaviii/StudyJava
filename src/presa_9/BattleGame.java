@@ -26,10 +26,6 @@ abstract class Character {
         return className;
     }
 
-    // Геттер для получения здоровья
-    int getHealth() {
-        return health;
-    }
 
     // Метод для преверки жив ли
     public boolean isAlive() {
@@ -56,7 +52,7 @@ abstract class Character {
 }
 
 class Armor {
-    private int defence;
+    private final int defence;
     private int durability;
 
     // Конструктор класса Armor
@@ -82,7 +78,7 @@ class Armor {
 }
 
 class Weapon {
-    private int attack;
+    private final int attack;
 
     // Конструктор класса Weapon
     public Weapon(int attack) {
@@ -143,8 +139,7 @@ class Dice {
 
 
 public class BattleGame {
-    private static Scanner scanner = new Scanner(System.in);
-    private static Random random = new Random();
+    private static final Scanner scanner = new Scanner(System.in);
 
 
     private static Character createCharacter(String name, int playerNumber) {
