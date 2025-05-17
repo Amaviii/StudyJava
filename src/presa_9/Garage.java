@@ -10,7 +10,7 @@ interface Vehicle {
 }
 
 class Car implements Vehicle {
-    private String brand;
+    private final String brand;
 
     Car(String brand) {
         this.brand = brand;
@@ -34,7 +34,7 @@ class Car implements Vehicle {
 
 
 class Bike implements Vehicle {
-    private String type;
+    private final String type;
 
     Bike(String type) {
         this.type = type;
@@ -57,7 +57,7 @@ class Bike implements Vehicle {
 }
 
 class Motorcycle implements Vehicle {
-    private int engineCapacity;
+    private final int engineCapacity;
 
     Motorcycle(int engineCapacity) {
         this.engineCapacity = engineCapacity;
@@ -80,9 +80,9 @@ class Motorcycle implements Vehicle {
 }
 
 public class Garage {
-    private List<Vehicle> vehicles = new ArrayList<>();
+    private final List<Vehicle> vehicles = new ArrayList<>();
 
-    public void addVehicle(Vehicle vehicle) {
+    private void addVehicle(Vehicle vehicle) {
         vehicles.add(vehicle);
         vehicle.displayInfo();
         System.out.println(" добавлен в гараж" );
