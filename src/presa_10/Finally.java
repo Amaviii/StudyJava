@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Finally {
     public static void main(String[] args) {
-        File file = new File("ForFinally");
+        File file = new File("src/ForFinally.txt");
         Scanner fl = null;
 
         try {
@@ -20,5 +20,4 @@ public class Finally {
             }
         }
     }
-
 }
