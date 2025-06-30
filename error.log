@@ -1,0 +1,12 @@
+
+=== Sat May 24 14:54:51 MSK 2025 ===
+Error Type: FileNotFoundException
+File Name: другой_несуществующий_файл.txt
+Message: другой_несуществующий_файл.txt (Не удается найти указанный файл)
+Stack Trace: java.io.FileNotFoundException: другой_несуществующий_файл.txt (Не удается найти указанный файл)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:159)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at presa_10.FileExceptionHandler.readFileAdvanced(FileExceptionHandler.java:87)
+	at presa_10.FileExceptionHandler.main(FileExceptionHandler.java:20)
